@@ -1,0 +1,26 @@
+<p>display-movie works!</p>
+
+ID:<input type="number" id="movie_id" [(ngModel)]="id" />
+<button (click)="get()">Get</button>
+
+
+<div *ngFor="let movie of movies; let i = index">
+  <p>id: {{movie.id}} </p>
+  <p>title: {{movie.title}} </p>
+  <p>type: {{movie.type}} </p>
+  <p>director: {{movie.director}} </p>
+  <p>duration: {{movie.duration}} </p>
+  <p>rating: {{movie.rating}} </p>
+  <p>description: {{movie.description}} </p>
+  <p>actors: {{movie.actors}} </p>
+  <p>dateAdded: {{movie.dateAdded}} </p>
+
+  <button (click)="delete(movie.id, i)">Delete</button>
+  <button type="button" [routerLink]="['/movies/form',movie.id]" >Edit</button>
+
+  <br/><br/>
+</div>
+
+
+
+
