@@ -4,9 +4,10 @@ import {DisplayMovieComponent} from "./display-movie/display-movie.component";
 import {FormMovieComponent} from "./form-movie/form-movie.component";
 
 const  routes: Routes = [
-  { path: '', redirectTo: '/movies', pathMatch: 'full' },
-  { path: 'movies', component: DisplayMovieComponent },
+  { path: '', component: DisplayMovieComponent  },
+  { path: 'movies', redirectTo: '', pathMatch: 'full' },
   { path: 'movies/form', component: FormMovieComponent },
+  { path: 'movies/form/:id', component: FormMovieComponent },
   { path: '**', redirectTo: '/movies' }
 ];
 

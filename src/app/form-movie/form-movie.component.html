@@ -1,4 +1,5 @@
-<p>form-movie works!</p>
+<link rel="stylesheet" href="form-movie.component.css">
+<p class="info">form-movie works!</p>
 
 <form (ngSubmit)="choiceOptions()">
   <p>title:<input name="title" [(ngModel)]="movie.title" type="text"/></p>
@@ -10,5 +11,5 @@
   <p>actors:<input name="actors"  [(ngModel)]="movie.actors" type="text"/></p>
   <p>dateAdded:<input name="dateAdded"  [(ngModel)]="movie.dateAdded" type="text"/></p>
 
-  <button type="submit" >Wyślij</button>
+  <button class='bsubmit' type="submit" >Wyślij</button>
 </form>

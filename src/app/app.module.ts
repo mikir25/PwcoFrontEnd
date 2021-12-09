@@ -6,7 +6,7 @@ import { DisplayMovieComponent } from './display-movie/display-movie.component';
 import { FormMovieComponent } from './form-movie/form-movie.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

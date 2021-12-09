@@ -1,24 +1,28 @@
-<p>display-movie works!</p>
+<link rel="stylesheet" href="display-movie.component.css">
+<p class="info">display-movie works!</p>
 
 ID:<input type="number" id="movie_id" [(ngModel)]="id" />
 <button (click)="get()">Get</button>
 
-
-<div *ngFor="let movie of movies; let i = index">
-  <p>id: {{movie.id}} </p>
-  <p>title: {{movie.title}} </p>
-  <p>type: {{movie.type}} </p>
-  <p>director: {{movie.director}} </p>
-  <p>duration: {{movie.duration}} </p>
-  <p>rating: {{movie.rating}} </p>
-  <p>description: {{movie.description}} </p>
-  <p>actors: {{movie.actors}} </p>
-  <p>dateAdded: {{movie.dateAdded}} </p>
+<div class="container">
+<div *ngFor="let movie of movies; let i = index" class='movies'>
+  <p><b>id:</b> {{movie.id}} </p>
+  <p><b>title:</b> {{movie.title}} </p>
+  <p><b>type:</b> {{movie.type}} </p>
+  <p><b>director:</b> {{movie.director}} </p>
+  <p><b>duration:</b> {{movie.duration}} </p>
+  <p><b>rating:</b> {{movie.rating}} </p>
+  <p><b>description:</b> {{movie.description}} </p>
+  <p><b>actors:</b> {{movie.actors}} </p>
+  <p><b>dateAdded:</b> {{movie.dateAdded}} </p>
 
   <button (click)="delete(movie.id, i)">Delete</button>
   <button type="button" [routerLink]="['/movies/form',movie.id]" >Edit</button>
 
-  <br/><br/>
+  <br/>
+</div>
+
+
 </div>
 
 

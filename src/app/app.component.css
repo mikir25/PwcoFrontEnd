@@ -1,0 +1,35 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #999;
+}
+
+li a {
+  display: block;
+  color: #555;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Century Gothic;
+  font-size: 1.2em;
+  
+}
+
+li a:hover {
+  background-color: #69c466;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #04AA6D;
+}
